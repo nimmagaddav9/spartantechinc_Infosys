@@ -95,7 +95,7 @@ At United, I used HOCs to wrap protected routes with auth checks and also to inj
   const EnhancedComponent = hoc(WrappedComponent);
   ```
 
-## What are Custom Hooks in React?
+## 17. What are Custom Hooks in React?
 
 Custom Hooks are JavaScript functions that start with `use` and let you reuse stateful logic across multiple components.
 
@@ -148,3 +148,23 @@ These hooks helped isolate logic, reduce duplication, and made components much m
 - Custom hooks can call other hooks inside them.
 - Great for reusing logic without repeating it in every component.
 - Should always start with the word `use` to follow React rules.
+
+## What is Routing in React?
+
+Routing in React is handled using `react-router-dom`. It maps URLs to components and enables navigation in single-page apps.
+
+### Example:
+
+- `/login` → Login page
+- `/dashboard` → Dashboard component
+
+### Key Hooks & Components:
+
+- `Routes`, `Route` – for defining routes
+- `useNavigate()` – for navigation in code
+- `useParams()` – to access URL params
+- `Navigate` – to redirect
+
+### When I used it:
+
+At United and Capital Group, I used routing to manage public/private routes, nested layouts, and dynamic route parameters. Also implemented lazy-loaded routes and route guards using a custom `PrivateRoute` wrapper.
